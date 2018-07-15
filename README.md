@@ -2,7 +2,7 @@
 
 ## Fix screen rotation
 
-T100HA's display is identified as 800x1280 (potrait) device. 
+T100HA's display is identified as 800x1280 (portrait) device. 
 
 ### Quick fix
 
