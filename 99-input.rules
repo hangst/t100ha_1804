@@ -1,0 +1,2 @@
+KERNEL=="event*", ENV{ID_VENDOR_ID}=="0b05", ENV{ID_MODEL_ID}=="1807", ENV{ID_INPUT_MOUSE}=="1", SYMLINK+="asus_touchpad"
+KERNEL=="event*", MODE="0666"
