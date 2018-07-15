@@ -50,8 +50,9 @@ pip2 install python-libinput
 ### Setup
 
 ```bash
-sudo cp 99-input.rules /etc/udev/rules.d/
 chmod +x auto_disable_asus_touchpad
-cp auto_disable_asus_touchpad* ~/.config/autostart/
+sudo cp auto_disable_asus_touchpad /opt/
+sudo cp 99-input.rules /etc/udev/rules.d/
+cp auto_disable_asus_touchpad.desktop ~/.config/autostart/
 # sudo reboot now
 ```
