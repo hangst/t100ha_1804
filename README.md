@@ -1,8 +1,8 @@
 
-# Disable ASUS touchpad when typing
+# Disable touchpad when typing
 
-The touchpad is identified as a USB mouse. 
-Disable-While-Typing feature in libinput is only available to touchpad (not mouse). 
+T100HA's touchpad is identified as a USB mouse. 
+Disable-While-Typing feature of libinput is only available for touchpad (not mouse). 
 
 ## Prerequisites
 
@@ -20,7 +20,7 @@ sudo udevadm control --reload-rules && sudo udevadm trigger
 
 # Rotate screen
 
-The display is identified as 800x1280 (potrait) device. 
+T100HA's display is identified as 800x1280 (potrait) device. 
 
 ## Pre-boot
 
