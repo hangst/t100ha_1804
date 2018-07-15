@@ -1,6 +1,6 @@
 [Desktop Entry]
 Type=Application
 Name=auto_disable_asus_touchpad
-Exec=~/.config/autostart/auto_disable_asus_touchpad
+Exec=/opt/auto_disable_asus_touchpad
 Hidden=false
 X-GNOME-Autostart-enabled=true
