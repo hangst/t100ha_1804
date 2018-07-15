@@ -1,14 +1,16 @@
-# Rotate screen temporarily
+# Fix screen rotation
 
 T100HA's display is identified as 800x1280 (potrait) device. 
+
+## Quick fix
 
 ```bash
 xrandr -o left
 ```
 
-# Rotate screen permanently
+## Permanent fix
 
-## Pre-boot
+### Pre-boot
 
 This configuration rotates pre-boot screen into landscape (and skips GRUB bootloader). 
 
@@ -16,7 +18,7 @@ This configuration rotates pre-boot screen into landscape (and skips GRUB bootlo
 sudo cp grub /etc/default/
 ```
 
-## Post-boot
+### Post-boot
 
 ```bash
 cp rotate_display.desktop ~/.config/autostart
