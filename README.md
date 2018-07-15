@@ -1,4 +1,4 @@
-# T100HA with Ubuntu 18.04
+# T100HA + Ubuntu 18.04
 
 ## Fix screen rotation
 
