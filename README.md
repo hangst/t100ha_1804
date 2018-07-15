@@ -1,4 +1,8 @@
 ```bash
+xrandr -o left
+```
+
+```bash
 # /etc/udev/rules.d/99-input.rules
 KERNEL=="event*", MODE="0666"
 ```
