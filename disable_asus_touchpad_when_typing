@@ -1,0 +1,28 @@
+#!/usr/bin/env python2
+
+import libinput
+
+input_grab = libinput.LibInput(grab=True)
+input_udev = libinput.LibInput(udev=True)
+input_udev.udev_assign_seat("seat0")
+
+touchpad_device = None
+
+while True: 
+    try: 
+        for event in input_udev.get_event(timeout=2): 
+            
+            if event.type is not libinput.constant.Event.KEYBOARD_KEY: 
+                continue
+            
+            if touchpad_device is None: 
+                touchpad_device = input_grab.path_add_device(
+                    "/dev/asus_touchpad")
+                # print("disabled")
+        
+        if touchpad_device is not None: 
+            input_grab.path_remove_device(touchpad_device)
+            touchpad_device = None
+            # print("enabled")
+    except: 
+        pass
