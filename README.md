@@ -15,10 +15,11 @@ pip2 install python-libinput
 
 ```bash
 sudo cp 99-input.rules /etc/udev/rules.d/
-sudo udevadm control --reload-rules && sudo udevadm trigger
+# sudo udevadm control --reload-rules && sudo udevadm trigger
+cp auto_disable_asus_touchpad* ~/.config/autostart/
 ```
 
-# Rotate screen
+# Rotate screen automatically
 
 T100HA's display is identified as 800x1280 (potrait) device. 
 
@@ -33,6 +34,6 @@ sudo cp grub /etc/default/
 ## Post-boot
 
 ```bash
-xrandr -o left
+cp rotate_screen.desktop ~/.config/autostart
 ```
 
