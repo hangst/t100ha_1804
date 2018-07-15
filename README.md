@@ -1,3 +1,5 @@
+# T100HA with Ubuntu 18.04
+
 ## Fix screen rotation
 
 T100HA's display is identified as 800x1280 (potrait) device. 
@@ -49,7 +51,6 @@ pip2 install python-libinput
 
 ```bash
 sudo cp 99-input.rules /etc/udev/rules.d/
-# sudo udevadm control --reload-rules && sudo udevadm trigger
 cp auto_disable_asus_touchpad* ~/.config/autostart/
 # sudo reboot now
 ```
