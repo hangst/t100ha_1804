@@ -34,6 +34,6 @@ sudo cp grub /etc/default/
 ## Post-boot
 
 ```bash
-cp rotate_screen.desktop ~/.config/autostart
+cp rotate_display.desktop ~/.config/autostart
 ```
 
