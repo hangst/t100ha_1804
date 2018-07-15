@@ -1,16 +1,16 @@
-# Fix screen rotation
+## Fix screen rotation
 
 T100HA's display is identified as 800x1280 (potrait) device. 
 
-## Quick fix
+### Quick fix
 
 ```bash
 xrandr -o left
 ```
 
-## Permanent fix
+### Permanent fix
 
-### Pre-boot
+#### Pre-boot
 
 This configuration rotates pre-boot screen into landscape (and skips GRUB bootloader). 
 
@@ -18,14 +18,14 @@ This configuration rotates pre-boot screen into landscape (and skips GRUB bootlo
 sudo cp grub /etc/default/
 ```
 
-### Post-boot
+#### Post-boot
 
 ```bash
 cp rotate_display.desktop ~/.config/autostart
 # sudo reboot now
 ```
 
-# Enable Wi-Fi
+## Enable Wi-Fi
 
 ```bash
 sudo cp \
@@ -33,19 +33,19 @@ sudo cp \
     /lib/firmware/brcm/brcmfmac43340-sdio.txt
 ```
 
-# Disable touchpad when typing
+## Disable touchpad when typing
 
 T100HA's touchpad is identified as a USB mouse. 
 Disable-While-Typing feature of libinput is only available for touchpad (not mouse). 
 
-## Prerequisites
+### Prerequisites
 
 ```bash
 sudo apt-get install python-pip
 pip2 install python-libinput
 ```
 
-## Setup
+### Setup
 
 ```bash
 sudo cp 99-input.rules /etc/udev/rules.d/
