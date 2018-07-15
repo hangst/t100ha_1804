@@ -1,6 +1,6 @@
 [Desktop Entry]
 Type=Application
-Name=xrandr_left
+Name=rotate_display
 Exec=xrandr -o left
 Hidden=false
 X-GNOME-Autostart-enabled=true
